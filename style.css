@@ -1,0 +1,141 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(158, 81, 236) 0%, rgb(210, 85, 205) 50%,rgb(142, 113, 238) 100%);
+    display: grid;  
+    justify-content: center;  
+    align-items: center; 
+}
+
+.container{
+    width: 100%;
+    min-width: 450px;
+    min-height: 300px;
+    background:#274e7d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#newtask{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+#newtask input{
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #032a57;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 10px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0b3a6f;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #02344a;
+    border:#111111;
+    color: #ffffff;
+    cursor: pointer;
+    outline:none;
+}
+
+#tasks-list{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 2px;
+    border-radius: 10px;
+    width: 100%;
+    max-height:200px;
+    overflow-y: auto;
+}
+
+.task{
+   background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.delete{
+    background-color:#025075;
+    color: #ffffff;
+    height: 70%;
+    width: 50px;
+    border-radius: 5px;
+    border: white;
+    cursor: pointer;
+    outline:invert;
+}
+.task .custom-checkbox {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 1px solid #1a759f;
+  margin-right: 0.1em;
+  border-radius: 50%;
+}
+
+.task-completed .custom-checkbox {
+  background-color: rgb(128, 0, 90);
+
+}
+
+.task-completed .taskname {
+  text-decoration:line-through;
+  color:black;
+}
+
+.header{
+   display:grid;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 0%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: large;
+   text-decoration: underline;
+}
+.dates{
+    padding: 5px;
+}
+.outline{
+    padding: 30px;
+    background-color: #08415d;
+    border-radius: 15px;
+}
+.time{
+    padding: 5px;
+}
